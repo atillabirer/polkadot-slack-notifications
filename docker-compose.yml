@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: stdot-monit-service
+    environment:
+      - NIMBUS_ADDRESS=${NIMBUS_ADDRESS}
+      - OFFSET_FROM_LAST_BLOCK=${OFFSET_FROM_LAST_BLOCK}
+      - WS_URL_PARA=${WS_URL_PARA}
+      - EXPLORER=${EXPLORER}

@@ -9,7 +9,7 @@ const PROVIDER_MAX_ATTEMPTS = 5;
 const DEFAULT_METRICS_PORT = 8_000;
 const DEFAULT_METRICS_PREFIX = 'trx_monitor_';
 
-const DEFAULT_DECIMALS = 12;
+const DEFAULT_DECIMALS = 10;
 const DEFAULT_LOG_LEVEL = 'debug';
 const DEFAULT_NIMBUS_ABI_PATH = './assets/Nimbus.json';
 

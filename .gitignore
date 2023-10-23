@@ -6,3 +6,5 @@ pnpm-lock.yaml
 
 dist
 .DS_STORE
+
+.env

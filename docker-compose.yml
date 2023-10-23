@@ -8,3 +8,4 @@ services:
       - WS_URL_PARA=${WS_URL_PARA}
       - EXPLORER=${EXPLORER}
       - TOKEN=${TOKEN}
+      - DECIMALS=${DECIMALS}

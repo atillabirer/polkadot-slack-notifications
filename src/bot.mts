@@ -20,10 +20,22 @@ export class Bot {
 	}
 
 	async sendMessage(message: string) {
-		if (this.bot) {
+		if (!this.bot) {
+			const body = {text: message};
+
 			logger.debug('Sending a message');
-			await this.bot.sendMessage(this.chatId, message);
+			try {
+				await fetch("https://hooks.slack.com/services/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",{
+				method: "POST",
+				headers: {
+					"Content-Type":"application/json"
+				},
+				body: JSON.stringify(body)
+			})
 			logger.debug('Message sent');
+			}catch(error) {
+				console.log(error);
+			}
 		} else {
 			logger.info('Not sending a message: \'allowMessage\' is false');
 			logger.debug('The message: ', message);

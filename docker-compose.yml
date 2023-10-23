@@ -7,3 +7,4 @@ services:
       - OFFSET_FROM_LAST_BLOCK=${OFFSET_FROM_LAST_BLOCK}
       - WS_URL_PARA=${WS_URL_PARA}
       - EXPLORER=${EXPLORER}
+      - TOKEN=${TOKEN}
